@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1440px;
+  min-width: 375px;
+  background-image: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  margin-top: 2em;
+  margin-right: 75%;
+  margin-left: 3em;
+  padding-bottom: 4em;
+}
+
+.illustration {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+article {
+  padding-bottom: 8%;
+  flex: 1;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 32px;
+  max-width: 60%;
+}
+
+p {
+  font-family: "Open Sans";
+  max-width: 75%;
+  font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  opacity: 75%;
+}
+
+.register {
+  font-family: "Open Sans";
+  font-size: 16px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 0.75em 3.7em 0.75em 3.7em;
+  margin-top: 0.5em;
+  border: solid 0;
+  border-radius: 20em;
+  box-shadow: 0 0.15em 0.5em hsla(0, 0%, 0%, 0.548);
+}
+
+main > div {
+  flex: 1;
+}
+
+.register:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.register:focus {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer {
+  display: flex;
+  margin-left: 75%;
+  padding-top: 3em;
+}
+
+i {
+  color: white;
+}
+
+.social {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+i:hover {
+  color: hsl(327, 74%, 49%);
+}
+
+i:focus {
+  color: hsl(327, 74%, 49%);
+}
+
+li:hover {
+  border: 1px solid hsl(327, 74%, 49%);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header > img {
+  width: 75%;
+}
+
+@media (max-width: 750px) {
+
+  body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    min-width: 375px;
+    background-image: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg");
+    background-size: 100vw;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin: 5%;
+  }
+
+  header {
+    width: 50%;
+    flex: 1;
+    justify-content: left;
+    margin-top: 2em;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 4em;
+  }
+
+  .illustration {
+    width: 90%;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 0;
+    justify-content: center;
+  }
+  
+  main {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+
+
+  article {
+    justify-content: center;
+    flex: 1;
+    margin-left: 12%;
+    padding-top: 4em;
+    padding-bottom: 8%;
+    width: 77%;
+  }
+
+  h1 {
+    justify-content: center;
+    font-size: 23px;
+    max-width: none;
+    text-align: center;
+    width: 90%;
+    margin-left: .5em;
+  }
+
+  p {
+    justify-content: center;
+    text-align: center;
+    max-width: none;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    opacity: 75%;
+    margin-right: none;
+    padding-left: 0;
+  }
+
+  .register {
+    flex: 1;
+    justify-content: center;
+    font-size: 12px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 1em 7em 1em 7em;
+    margin-left: 15%;
+    margin-top: 0.5em;
+    border: solid 0;
+    border-radius: 20em;
+  }
+
+  main > div {
+    flex-direction: column;
+  }
+
+  main > article {
+    flex: 1;
+  }
+
+  footer {
+    justify-content: center;
+    margin-left: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .social {
+    list-style-type: none;
+  }
+
+  li {
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header > img {
+    width: 75%;
+  }
+}
