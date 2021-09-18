@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   max-width: 1440px;
   min-width: 375px;
-  background-image: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+  background-image: url("./images/bg-desktop.svg");
   background-size: auto;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -148,14 +148,13 @@ header > img {
 }
 
 @media (max-width: 750px) {
-
   body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 1440px;
     min-width: 375px;
-    background-image: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg");
+    background-image: url("./images/bg-mobile.svg");
     background-size: 100vw;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -180,7 +179,7 @@ header > img {
     padding-right: 0;
     justify-content: center;
   }
-  
+
   main {
     flex: 1;
     display: block;
@@ -188,7 +187,6 @@ header > img {
     align-items: center;
     min-width: 100%;
   }
-
 
   article {
     justify-content: center;
@@ -205,7 +203,7 @@ header > img {
     max-width: none;
     text-align: center;
     width: 90%;
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
 
   p {
